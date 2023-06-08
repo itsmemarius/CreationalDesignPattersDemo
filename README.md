@@ -1,24 +1,3 @@
-
-## FactoryMethod
-
-The FactoryMethod is used to instantiate the TransmitterProxy object. Instead of directly instantiating the object using the "new" keyword, the FactoryMethod is used to instantiate an object referred to as a "go" object, and then assign the TransmitterProxy object reference to this object. This helps keep the code organized and allows for the creation of multiple instances of the TransmitterProxy class, if needed. The FactoryMethod also allows for the reusability of code by moving the object instantiation outside of the code.
-
-Code example for FactoryMethod:
-
-```c#
-public class TransmitterProxy
-{
-    public static TransmitterProxy Create()
-    {
-        GameObject go = new GameObject();
-        return go.AddComponent<TransmitterProxy>();
-    }
-    
-    // TransmitterProxy methods and properties
-}
-```
-
-
 # 🛠️ Creational Design Patterns Demo 🛠️
 A project developed to show the Creational Design Patters I learned at Uni.
 
